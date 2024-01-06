@@ -1,0 +1,25 @@
+html {
+    font-family: palatino;
+}
+
+body {
+    background-color: lightgoldenrodyellow;
+}
+
+nav {
+    display: flexbox;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+a {
+    text-decoration: none;
+}
+
+.bigBorder {
+    width: 300px;
+    border: 15px solid green;
+    padding: 50px;
+    margin: 20px;
+}

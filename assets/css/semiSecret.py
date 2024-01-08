@@ -28,6 +28,16 @@ class card():
         self.x = x
         self.y = y
 
+class board():
+    def __init__(self, x, y) -> None:
+        self.x = x
+        self.y = y
+        self.width = 750
+        self.height = 200
+    
+    def draw_board(self):
+        WIN.blit(pygame.rect.Rect((self.x, self.y), (self.width, self.height)))
+
 def start():
     isStart = False
     while not isStart:

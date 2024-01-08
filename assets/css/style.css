@@ -1,25 +1,42 @@
+:root{
+    --bg: #fafad2;
+    --border: #11579e;
+}
+
 html {
     font-family: palatino;
 }
 
 body {
-    background-color: lightgoldenrodyellow;
+    background-color: var(--bg);
+}
+
+header{
+    display: block;
+    align-items: center;
+}
+
+h1 {
+    display: flex;
+    justify-self: center;
 }
 
 nav {
-    display: flexbox;
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 a {
     text-decoration: none;
+    font-size: x-large;
+    text-shadow: 2px;
+    margin: 20px;
 }
 
 .bigBorder {
-    width: 300px;
-    border: 15px solid green;
+    border: 15px var(--border);
     padding: 50px;
     margin: 20px;
 }

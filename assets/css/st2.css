@@ -100,6 +100,7 @@ p {
     height: 100%;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: var(--lseafoam);
+    border-radius: 10px;
 }
 
 .ff {
@@ -121,8 +122,8 @@ p {
     padding: 50px;
     height: 300px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: var(--seafoam);
     color: (--cream);
+    border-radius: 25px;
 }
 .submain img {
     max-height: 200px;
@@ -133,14 +134,14 @@ p {
     font-size: 36px;
 }
 #sm1 {
-    background-color: var(--seafoam);
+    background-color: var(--navy);
     margin-top: 20px;
 }
 #sm2 {
     background-color: var(--bluegreen);
 }
 #sm3 {
-    background-color: var(--navy);
+    background-color: var(--seafoam);
 }
 
 .footer {
@@ -154,4 +155,29 @@ p {
 
 .footer h2 {
     font-size: 20px;
+}
+
+
+/*
+------------------------------------------------------------------
+*/
+
+.abMain {
+    background-color: var(--lsage);
+}
+.abMain h2 {
+    color: var(--cream);
+}
+
+#as1 {
+    background-color: var(--navy);
+}
+
+/*
+------------------------------------------------------------------
+*/
+
+.proMain {
+    width: 100%;
+    display: inline-block;
 }

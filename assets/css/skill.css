@@ -9,15 +9,18 @@
 
 .light {
     background-color: var(--light);
+    border-style: solid;
+    color: var(dark);
 }
-
 .dark {
     background-color: var(--dark);
 }
-
 .inf {
     color: var(--dark);
     background-color: var(--light);
-    border-radius: 2px;
     border-color: var(--dark);
+    border-style: solid;
+}
+#zerr {
+    border-style: none;
 }

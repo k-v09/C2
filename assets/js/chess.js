@@ -1,22 +1,42 @@
-const rows = document.querySelectorAll("tr");
 
-const pickins = rows[0];
-const oneRow = rows[1];
-const twoRow = rows[2];
-const threeRow = rows[3];
-const fourRow = rows[4];
-const fiveRow = rows[5];
-const sixRow = rows[6];
-const sevenRow = rows[7];
-const eightRow = rows[8];
 
-const odds = [];
-const evens = [];
-for (let i = 1; i < rows.length; i++) {
-    if (i % 2 == 1) {
-        odds.push(rows[i]);
-    }
-    else {
-        evens.push(rows[i]);
+function topRow (table) {
+    const fEL = document.createElement("tr");
+    table.appendChild(fEL);
+    for (let i = 0; i <= 9; i++) {
+        ph = document.createElement("th")
+        if (i > 0) {
+            ph.textContent = i;
+        }
+        fEL.appendChild(ph);
     }
 }
+function rows (table) {
+    for (let i = 0; i < 9; i++) {
+        funrow = document.createElement("tr");
+        table.appendChild(funrow);
+        const thiongy = document.createElement("td");
+        thiongy.textContent = i;
+        funrow.appendChild(thiongy);
+        for (let j = 0; j < 9; j ++) {
+            const thung = document.createElement("td");
+            // if ((j % 2 === 0 && i % 2 === 0) || (j % 2 === 1 && i % 2 === 1)) {
+            //     thung.className = "light";
+            // }
+            // else {
+            //     thung.className = "dark";
+            // }
+            funrow.appendChild(thung);
+        }
+    }
+}
+
+function setBoard () {
+    const mainEL = document.querySelector(".mainly");
+    const tabby = document.createElement("table");
+    mainEL.appendChild(tabby);
+    console.log(mainEL);
+    topRow(tabby);
+    rows(tabby);
+}
+setBoard();

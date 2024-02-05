@@ -1,10 +1,9 @@
 
-
 function topRow (table) {
     const fEL = document.createElement("tr");
     table.appendChild(fEL);
     for (let i = 0; i <= 9; i++) {
-        ph = document.createElement("th")
+        ph = document.createElement("th");
         if (i > 0) {
             ph.textContent = i;
         }

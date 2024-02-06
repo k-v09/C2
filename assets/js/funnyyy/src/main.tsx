@@ -6,7 +6,7 @@ function THead () {
   let fungi = [];
   for (let i = 0; i < 9; i++) {
     if(i > 0){
-      fungi.push(<th className='inf'>{i}</th>);
+      fungi.push(<th className='inf' style={{textAlign: 'center'}}>{i}</th>);
     }
     else {
       fungi.push(<th className='inf' id='zerr'></th>);

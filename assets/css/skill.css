@@ -1,6 +1,7 @@
 :root {
     --dark: #000000;
     --light: #ffffff;
+    --wh: 90px;
 }
 
 .mainly {
@@ -10,16 +11,23 @@
 .light {
     background-color: var(--light);
     border-style: solid;
-    color: var(dark);
+    color: var(--dark);
+    width: var(--wh);
+    height: var(--wh);
 }
 .dark {
     background-color: var(--dark);
+    width: var(--wh);
+    height: var(--wh);
 }
 .inf {
     color: var(--dark);
     background-color: var(--light);
     border-color: var(--dark);
     border-style: solid;
+    width: var(--wh);
+    height: var(--wh);
+    font-size: 48px;
 }
 #zerr {
     border-style: none;

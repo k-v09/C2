@@ -1,7 +1,11 @@
 :root {
     --dark: #000000;
     --light: #ffffff;
-    --wh: 90px;
+    --wh: 70px;
+}
+
+table {
+    margin-left: 5%;
 }
 
 .mainly {

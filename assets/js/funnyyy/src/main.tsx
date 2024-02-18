@@ -46,21 +46,32 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
   </React.StrictMode>,
 );
 
-class Piece {
+const ctab = document.getElementById("bud");
+console.log(ctab);
+const IDVals = {
+  0: "pawn",
+  1: "knight",
+  2: "bishop",
+  3: "rook",
+  4: "queen",
+  5: "king"
+}
+
+class Pawn {
   public color: string;
   public row: number;
   public col: number;
-  public type: string;
-  
+  public type: number;
+
   constructor (color: string, row: number, col: number) {
     this.color = color;
     this.row = row;
     this.col = col;
-    this.type = "Basic";
+    this.type = 0;
+  }
+
+  draw (): void {
   }
 }
 
-const ctab = document.getElementById("bud");
-console.log(ctab);
-//const pieces = {pawn: "p", knight: "n", bishop: "b", rook: "r", queen: "q", king: "k"}
-
+console.log(IDVals);

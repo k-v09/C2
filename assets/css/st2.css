@@ -242,6 +242,12 @@ p {
     float: right;
 }
 
+#GH {
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    margin-bottom: 0px;
+}
+
 #RF {
     margin-bottom: 20px;
     padding: 50px;
